@@ -1,282 +1,322 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Option 1: Include in HTML -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ije Project</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
   <body>
-    <!-- ........ header>>>>>> -->
-    <div>
-        <div class="topnav">
-          <div class="logo">
-            <img src="" alt="logo" />
+    <!-- Navbar -->
+    <nav class="navbar container navbar-expand-lg navbar-light bg-transparent fixed-top">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <img
+          src="img/logo.png"
+          alt="logo"
+          class="nav-brand"
+          height="50vh" />
+        <!-- Toggle Btn -->
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWarningNavbar"
+          aria-controls="offcanvasWarningNavbar"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Sidebar -->
+        <div
+          class="offcanvas offcanvas-start bg-white"
+          tabindex="-1"
+          id="offcanvasWarningNavbar"
+          aria-labelledby="offcanvasWarningNavbarLabel">
+          <!-- Sidebar Header -->
+          <div class="offcanvas-header text-white border-bottom">
+            <img
+              src="img/logo.png"
+              alt="logo"
+              class="nav-brand"
+              height="50vh" />
+
+            <!-- Close Btn -->
+            <button
+              type="button"
+              class="btn-close btn-close-primary shadow-none border-0"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
           </div>
 
-          <div class="topnav-right">
-            <a href="">About Us</a>
-            <a href="">Services</a>
-            <a href=""> Contact Us</a>
+          <!-- Sidebar Body -->
+          <div class="offcanvas-body d-flex align-items-center">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-<br><br>
+    </nav>
 
-    <!-- ......About Us >>>>>> -->
-    <div class="about">
-      <h1 class="aboutus">About Us</h1>
-      <p class="about">
-        We connect people or goods in need of transportation in contact with relaible people <br> and businesses that have the means to deliver 
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- About Us -->
+    <section id="about">
+      <div class="container px-lg-5 text-center p-2">
+        <p class="display display-4 m-0 p-3">About Us</p>
+        <p class="fs-5">
+          We connect people or goods in need of transportation in contact with
+          reliable people and businesses that have the means to deliver.
+        </p>
+      </div>
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-md-4 g-3">
+            <p class="fs-4 m-0"><i class="icon fa fa-eye me-2"></i>Vision</p>
+            <p class="pt-lg-4 p-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
+              animi doloremque odio voluptatem a perferendis, optio adipisci
+              tempore similique. Officia aperiam ad itaque repellendus aliquid!
+              Nostrum iusto totam consequatur natus.
+            </p>
+          </div>
+          <div class="col-md-4 g-3">
+            <p class="fs-4 m-0">
+              <i class="icon fa fa-paper-plane me-2"></i>Vision
+            </p>
+            <p class="pt-lg-4 p-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
+              animi doloremque odio voluptatem a perferendis, optio adipisci
+              tempore similique. Officia aperiam ad itaque repellendus aliquid!
+              Nostrum iusto totam consequatur natus.
+            </p>
+          </div>
+          <div class="col-md-4 g-3">
+            <p class="fs-4 m-0">
+              <i class="icon fa fa-bar-chart me-2"></i>Vision
+            </p>
+            <div class="d-flex flex-column pt-4">
+              <div class="d-flex">
+                <img class="check me-2" src="img/check.png" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Laborum animi doloremque odio voluptatem a perferendis, optio
+                  adipisci
+                </p>
+              </div>
+              <div class="d-flex">
+                <img class="check me-2" src="img/check.png" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Laborum animi doloremque odio voluptatem a perferendis, optio
+                  adipisci
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How Ije Works -->
+    <section class="py-lg-5 p-2">
+      <div class="text-center">
+        <p class="display display-5 m-0 p-3">How Ije Works</p>
+        <p class="fs-5">
+          We connect people or goods in need of transportation in contact with
+          reliable people and businesses that have the means to deliver.
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="d-flex justify-content-between">
+              <p><i class="icon fa fa-users"></i></p>
+              <p class="fs-5 ps-3">
+                <strong>Dummy</strong><br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+                ipsam?
+              </p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p><i class="icon fa fa-users"></i></p>
+              <p class="fs-5 ps-3">
+                <strong>Dummy</strong><br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+                ipsam?
+              </p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p><i class="icon fa fa-users"></i></p>
+              <p class="fs-5 ps-3">
+                <strong>Dummy</strong><br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+                ipsam?
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="/img/bike.png" alt="" width="100%" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Ije -->
+    <section class="text-center pb-5">
+      <p class="display display-5 m-0 p-3">Download Ije</p>
+      <p class="fs-5">
+        We connect people or goods in need of transportation in contact with
+        reliable people and businesses that have the means to deliver.
       </p>
-    </div> <br><br><br>
+      <div class="container">
+        <img class="rounded-4" src="img/qrcode.jpg" alt="" width="100%" />
+      </div>
+    </section>
 
-    <!-- ........Vision, Mission and Core Value>>>>>>>>>>> -->
-    <div class="row">
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <tr>
-            <td class="btn"><i class="fa fa-eye"></i></td>
-            <td><strong>Vision</strong></td>
-          </tr> <br><br>
-          <p>Moving people and goods in safety and comfort, fostering a greener environment.</p>
+    <!-- FAQ -->
+    <section>
+      <div class="container">
+        <p class="display display-6 m-0">Frequently Asked Question</p>
+        <p class="m-0">We answered them so you don't have to ask</p>
+        <div class="yellow_bg p-3 m-3 rounded-3">
+          <p class="fs-4 m-0">How much do I pay to ride a ride?</p>
+          <p class="fs-5 px-4 m-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eaque
+            rerum magnam fugit inventore nulla ea nisi culpa quasi modi saepe
+            illo, quisquam rem laborum odit quos soluta maxime reiciendis! Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Magnam repellat
+            voluptatum.
+          </p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <tr>
-            <td class="btn"><i class="fa fa-paper-plane"></i></td>
-            <td><strong>Mission Statement </strong></td>
-          </tr> <br><br>
-          <ul>
-            <li> <i class="fa fa-check text-white bg-warning bg-rounded" style="border-radius: 10px;"></i> Strive to be the go-to information services for reliable transportation of persons and goods.</li><br>
 
-            <li> <i class="fa fa-check text-white bg-warning bg-rounded" style="border-radius: 10px;"></i> To provide excellent customer experience in all our dealings and be responsive to feedbacks to enhance our desired quality service.</li><br>
+      <!-- Accordion -->
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#One"
+              aria-expanded="false"
+              aria-controls="One">
+              Can I drive for Ije?
+            </button>
+          </h2>
 
-            <li> <i class="fa fa-check text-white bg-warning bg-rounded" style="border-radius: 10px;"></i> To work in sync with all interested stakeholders to protect the environment and support a green economy.</li><br>
-
-            <li> <i class="fa fa-check text-white bg-warning bg-rounded" style="border-radius: 10px;"></i> Putting people first in all we do by creating an inclusive, safe and motivating workplace.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <tr>
-            <td class="btn"><i class="fa fa-bar-chart"></i></td>
-            <td><strong>Our Core Values</strong></td>
-          </tr> <br><br>
-          <ul>
-            <li><i class="fa fa-check text-white bg-warning bg-rounded" style="border-radius: 10px;"></i><strong>PEOPLE: </strong> We care about our people as our best asset; we embrace ddeversity and treat everyone with respect and dignity.</li><br>
-
-            <li><i class="fa fa-check text-white bg-warning bg-rounded" style="border-radius: 10px;"></i> SERVICES: We pride our customer-focused service benchmarked on respect, safety, reliability, and competitive cost.</li><br>
-
-            <li><i class="fa fa-check text-white bg-warning bg-rounded" style="border-radius: 10px;"></i> OWNERSHIP: We take full responsibility for our decisions, actions and outcomes. We own our company and treat it with the clinical attention it deserves just as we take our customers, partners, and stakeholders as family.</li><br>
-
-            <li> <i class="fa fa-check text-white bg-warning bg-rounded" style="border-radius: 10px;"></i> TEAMWORK: Together each achieves more-internal and external clients. We are all in one team; we engage and understand each other better to create a safe workplace and produce excellent outcomes for our customers, staff, partners, and the environment.</li><br>            
-          </ul>
-        </div>
-      </div>
-    </div> <br><br>
-    
-    <div class="how">
-      <h1 class="how-ije">How Ije Works</h1>
-      <p class="how">
-        Ije is a transport and delivery pooling solution. When you book a ride or delivery, our sysgtem uses your GPS to find the nearest <br> driver to you, we ensure the driver is given the shortest possible route so that you pay the lowest possible fee. 
-      </p>
-    </div> <br><br>
-    <br>
-  <div class="deliveries">
-      <div class="deli">
-        <br><br><br>
-        <li><strong>Deliveries</strong><br>Fast, Reliable and Safe. Pay Less, deliver more.</li><br><br>
-
-        <li><strong>Drivers</strong><br>Put money in your pocket. Choose who <br> or what you carry-passengers or goods or both.</li><br><br>
-
-        <li><strong>Riders</strong><br>Ride how you want, when you want and with who you want. <br> Save money and time when you ride with Ije.</li><br><br>
-
-        <li><strong>Dedicated Driver</strong><br>Ije dedicated drivers offers a more personalized, convenient <br> and exclusive services to a specific passager or a group of <br> passengers, including thoe with disbilities or special needs; <br> while also offering drivers the opportunity for a more stable <br> and reliable source of income.</li><br><br>
-      </div>
-
-      <div class="phn">
-        <img src="img/bike.jpg" alt="delivery bike" height="720px">
-      </div>
-  </div>
-
-   <!-- ......Donwload >>>>>> -->
-   <div class="dld">
-    <h1 class="dld-ij">Download Ije</h1>
-    <p class="dest">
-      Your destination is just a few taps away. 
-    </p>
-  </div>
-
-  <div class="qrcode">
-    <img src="img/qrcode.jpg" alt="" width="80%" height="400px">
-  </div>
-
-  <!-- ............. FAQ>>>>>>>>>>> -->
-  <div class="frq">
-    <h1 class="ask"><strong>Frequently Asked Questions</strong></h1>
-    <p>We answered them so you dont have to ask.</p>
-  </div>
-
-
-  <!-- >>>>>>How To Pay>>>>>>> -->
-  <div class="howtopay">
-    <div class="txt">
-      <h2>How much do I pay to ride a ride?</h2>
-      <p class="order-ride">The cost of a trip on a ridesharing app can vary based on factors like distance time of day, ride type, promotions, traffic conditions, and location. To get an accurate estimate, simply enter your pick-up and drop-off locations in the app, and it will provide you with the cost. Keep in mind that actual fares are subject to fluctuations due to real-time conditions. </p>
-    </div>
-  </div>
-<!-- Form or FAQs -->
-<div class="form">
-  
-  <div class="accordion accordion-flush" id="accordionFlushExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingOne">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Can I drive for Ije?
-        </button>
-      </h2>
-      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Yes or No</div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-          How do I request for a ride?
-        </button>
-      </h2>
-      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Lorem, ipsum dolor..</div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          What happens if I need to cancel a ride?
-        </button>
-      </h2>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Lorem, ipsum dolor.</div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          What if I want a personal ride?
-        </button>
-      </h2>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Lorem, ipsum dolor.</div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          How do i rate and provide feedback on my driving?
-        </button>
-      </h2>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Lorem, ipsum dolor.</div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          What should I do incase i left something in the vehicle?
-        </button>
-      </h2>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Lorem, ipsum dolor.</div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          Do you have any discount or promo codes available?
-        </button>
-      </h2>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Lorem, ipsum dolor.</div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          Is Ije curretly Hiring?
-        </button>
-      </h2>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Yes or No</div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End of Form or FAQs -->
-
-<!-- Remove the container if you want to extend the Footer to full width. -->
-
-  <footer class="text-center text-lg-start" style="background-color: #db6930;">
-
-    <div class="container text-left">
-      <div class="row">
-        <div class="col">
-          LOGO
-        </div>
-        <div class="lets">
-          <h2 class="touch">Let's stay in touch</h2>
-          <div class="input-group">
-            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-            <button type="button" class="btn btn-outline-primary" data-mdb-ripple-init>search</button>
+          <div
+            id="One"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Yes or No</div>
           </div>
-
-          <h2 class="link">Links</h2>
-          <a href="#">Privacy policy</a><br>
-          <a href="#">Terms of Use</a><br>
-          <a href="#">Platform Access Agreement</a><br>
-          <a href="#">Fare Agreement</a><br>
-          <a href="#">Indeminity Agreement</a><br>
         </div>
-    
-        <div class="col">
-          <h2 class="cnt-us">Contact Us</h2>
-          <p class="cnt">Need help or have a Question?</p>
-          <p class="cnt">Contact Us</p>
-          <a href="#">infor@ijemove.com</a><br>
-          <a href="#">customerservice@ijemove.com</a>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#Two"
+              aria-expanded="false"
+              aria-controls="Two">
+              Can I drive for Ije?
+            </button>
+          </h2>
+
+          <div
+            id="Two"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Yes or No</div>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <!-- Copyright -->
-    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      Copyright © 2021 Ijeoma Ltd
-      
-    </div>
-    <!-- Copyright -->
-  </footer>
-  
-</div>
-<!-- End of .container -->
-</body>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 py-3 text-white">
+            <img src="logo.png" alt="logo" />
+          </div>
+          <div class="col-md-6 py-3 text-white d-flex flex-column text-center">
+            <p class="fs-3 m-0">Let's Stay in Touch</p>
+            <p class="m-0">Subscribe for updates on Ije</p>
+            <!-- Search -->
+            <form action="" class="my-3">
+              <input type="text" class="bg-light">
+              <button class="bg-warning">Search</button>
+            </form>
+            <p class="fs-3 m-0">QUICK LINKS</p>
+            <a href="#" class="text-white mb-2">E-BOOKS</a>
+            <a href="#" class="text-white mb-2">JOIN THE CLUB</a>
+            <a href="#" class="text-white mb-2">EXCLUSIVE OFFER</a>
+            <a href="#" class="text-white mb-2">SEND A MESSAGE</a>
+          </div>
+          <div class="col-md-3 py-3 text-white d-flex flex-column">
+            <p class="fs-3 m-0">Contact Us</p>
+            <p>
+              Need help or have a question?
+              <br />
+              Contact Us
+            </p>
+
+            <div>
+              <p class="m-0">info@ijemove.com</p>
+              <p class="m-0">customerservice@ijemove.com</p>
+            </div>
+
+            <div class="py-2">
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white m-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white m-2"
+                ><i class="fab fa-x-twitter"></i
+              ></a>
+              <a href="#" class="text-white m-2"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" class="text-white m-2"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-top border-white text-center p-3">
+        <p class="m-0 text-white">Copyright &copy; 2021 - 2023 Ijeoma Ltd.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
